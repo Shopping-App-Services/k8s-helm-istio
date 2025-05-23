@@ -28,7 +28,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: adijaiswal/emailservice:latest
+          image: nitesh2611/email-service:latest
           ports:
             - containerPort: 8080
           env:
@@ -87,7 +87,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: adijaiswal/checkoutservice:latest
+          image: nitesh2611/checkout-service:latest
           ports:
             - containerPort: 5050
           readinessProbe:
@@ -155,7 +155,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: adijaiswal/recommendationservice:latest
+          image: nitesh2611/recommendation-service:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -221,7 +221,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: adijaiswal/frontend-microservice:latest
+          image: nitesh2611/frontend-service:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -317,7 +317,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: adijaiswal/paymentservice:latest
+          image: nitesh2611/payment-service:latest
           ports:
             - containerPort: 50051
           env:
@@ -375,7 +375,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: adijaiswal/productcatalogservice:latest
+          image: nitesh2611/product-catalog-service:latest
           ports:
             - containerPort: 3550
           env:
@@ -433,7 +433,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: adijaiswal/cartservice:latest
+          image: nitesh2611/cart-service:latest
           ports:
             - containerPort: 7070
           env:
@@ -505,7 +505,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: adijaiswal/loadgenerator:latest
+          image: nitesh2611/loadgenerator-service:latest
           env:
             - name: FRONTEND_ADDR
               value: frontend:80
@@ -537,7 +537,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: adijaiswal/currencyservice:latest
+          image: nitesh2611/currency-service:latest
           ports:
             - name: grpc
               containerPort: 7000
@@ -595,7 +595,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: adijaiswal/shippingservice:latest
+          image: nitesh2611/shipping-service:latest
           ports:
             - containerPort: 50051
           env:
@@ -709,7 +709,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: adijaiswal/adservice:latest
+          image: nitesh2611/ad-service:latest
           ports:
             - containerPort: 9555
           env:
